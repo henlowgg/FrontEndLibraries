@@ -7,7 +7,8 @@ class App extends React.Component {
       return (
           <div>
               { /* Change code below this line */ }
-              <Welcome />
+              {/* can either put a name, or leave it blank with a space */}
+              <Welcome name={"name"}/>
               { /* Change code above this line */ }
           </div>
       );
@@ -23,7 +24,7 @@ class App extends React.Component {
       return (
           <div>
             { /* Change code below this line */ }
-            <p>Hello, <strong></strong>!</p>
+            <p>Hello, <strong>{this.props.name}</strong>!</p>
             { /* Change code above this line */ }
           </div>
       );
