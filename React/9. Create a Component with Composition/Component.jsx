@@ -15,10 +15,12 @@ const ChildComponent = () => {
         <div>
           <h1>I am the parent</h1>
           { /* Change code below this line */ }
-  
+          <ChildComponent />
   
           { /* Change code above this line */ }
         </div>
       );
     }
   };
+
+  // pretty much just always render child components in a self closing tag
