@@ -12,7 +12,7 @@ const Items = (props) => {
     }
     render() {
       { /* Change code below this line */ }
-      return <Items />
+      return <Items quantity={10}/>
       { /* Change code above this line */ }
     }
   };
