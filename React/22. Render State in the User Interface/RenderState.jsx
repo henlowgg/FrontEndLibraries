@@ -15,3 +15,6 @@ class MyComponent extends React.Component {
       );
     }
   };
+
+//   if you want to render the name 'freeCodeCamp' , use state, put it inside curly brackets
+// {this.state.name}
