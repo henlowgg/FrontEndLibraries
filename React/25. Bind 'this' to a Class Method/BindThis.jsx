@@ -24,3 +24,6 @@ class MyComponent extends React.Component {
       );
     }
   };
+
+  // this.handleClick = this.handleClick.bind(this);
+  // lots of uses of "this" here, but just means that its explicitly binding 'this' to the handleClick() method
