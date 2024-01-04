@@ -1,10 +1,17 @@
+const styles = {
+    color: 'purple',
+    fontSize: 40,
+    border: "2px solid purple",
+};
 // Change code above this line
 class Colorful extends React.Component {
     render() {
       // Change code below this line
       return (
-        <div style={{color: "yellow", fontSize: 24}}>Style Me!</div>
+        <div style={styles}>Style Me!</div>
       );
       // Change code above this line
     }
   };
+
+//object just means the objects(color, fontSize, and border) within the styles constant
