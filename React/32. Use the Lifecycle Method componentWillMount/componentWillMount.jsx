@@ -4,7 +4,7 @@ class MyComponent extends React.Component {
     }
     componentWillMount() {
       // Change code below this line
-  
+  console.log('hi')
       // Change code above this line
     }
     render() {
