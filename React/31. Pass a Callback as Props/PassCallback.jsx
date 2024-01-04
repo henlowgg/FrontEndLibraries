@@ -15,7 +15,8 @@ class MyApp extends React.Component {
       return (
          <div>
           { /* Change code below this line */ }
-  
+          <GetInput input={this.state.inputValue} handleChange={this.handleChange} />
+          <RenderInput input={this.state.inputValue} />
           { /* Change code above this line */ }
          </div>
       );
@@ -51,3 +52,9 @@ class MyApp extends React.Component {
       );
     }
   };
+
+  /* 
+  passing prop of input just meant input={}
+  rendering the class of RenderInput and GetInput just means to put it in a self closing tag in MyApp
+  
+  */
