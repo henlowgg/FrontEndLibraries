@@ -27,3 +27,15 @@ class ControlledInput extends React.Component {
       );
     }
   };
+
+
+/* 
+for future reference
+
+creating the method just means, handleChange(event) {}
+
+gotta do the bind method before the creation of the handleChange method
+this.handleChange = this.handleChange.bind(this)
+
+rendering the method is just <input value={this.state.input} onChange={this.handleChange}/>
+*/
