@@ -5,7 +5,11 @@ class OnlyEvens extends React.Component {
     shouldComponentUpdate(nextProps, nextState) {
       console.log('Should I update?');
       // Change code below this line
+      if(nextProps.value % 2 === 0) {
       return true;
+      } 
+        return false;
+      
       // Change code above this line
     }
     componentDidUpdate() {
@@ -38,3 +42,6 @@ class OnlyEvens extends React.Component {
       );
     }
   }
+
+
+  // solve by using an if statement if(nextProps.value % 2 === 0){return true;} return false;}
