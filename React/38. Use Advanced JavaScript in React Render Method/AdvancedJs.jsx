@@ -49,7 +49,7 @@ const inputStyle = {
         'Outlook not so good',
         'Very doubtful'
       ];
-      const answer = 'change me!'; // Change this line
+      const answer = possibleAnswers[this.state.randomIndex]; // Change this line
       return (
         <div>
           <input
@@ -64,10 +64,18 @@ const inputStyle = {
           <h3>Answer:</h3>
           <p>
             {/* Change code below this line */}
-  
+            {answer}
             {/* Change code above this line */}
           </p>
         </div>
       );
     }
   }
+
+
+  /* 
+  const answer = possibleAnswers[this.state.randomIndex];
+  While you are inside the render method and not inside the return method, you can write JavaScript without wrapping it inside curly braces.
+
+First, you will have to set the constant ‘answer’ to a value. Access the ‘possibleAnswers’ array using the value of ‘randomIndex’, which is located within the state of your component. Remember, you access state using this.state.
+  */
