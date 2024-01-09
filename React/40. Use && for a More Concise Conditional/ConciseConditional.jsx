@@ -16,8 +16,10 @@ class MyComponent extends React.Component {
       return (
          <div>
            <button onClick={this.toggleDisplay}>Toggle Display</button>
-           <h1>Displayed!</h1>
+           {this.state.display && <h1>Displayed!</h1>}
          </div>
       );
     }
   };
+
+  // wraps the h1 tag, as a conditional render, by stating {this.state.display && <h1>whatever random text to be displayed</h1>}
